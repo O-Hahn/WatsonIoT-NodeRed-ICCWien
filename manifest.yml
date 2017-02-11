@@ -1,0 +1,17 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: WatsonIoT-NodeRed-ICCWien
+  host: WatsonIoT-NodeRed-ICCWien
+  disk_quota: 1024M
+  services:
+  - IoTDemo-NodeRed-ICCWien-iotf-service
+  - Language Translator-iccwien
+  - Text to Speech-iccwien
+  - WatsonIoT-NodeRed-ICCWien-cloudantNoSQLDB
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: grovepi
+    NODE_RED_PASSWORD: IbmGrovePi
