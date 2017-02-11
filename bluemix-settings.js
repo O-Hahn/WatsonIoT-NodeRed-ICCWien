@@ -28,6 +28,9 @@ var settings = module.exports = {
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
     debugMaxLength: 1000,
+            
+    // add to enable cors
+    httpNodeCors: { origin: "*", methods: ['GET','PUT','POST','DELETE'] },
 
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
